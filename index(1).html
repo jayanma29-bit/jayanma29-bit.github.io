@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jayan | Student Developer</title>
+<meta name="description" content="Portfolio of Jayan, a Texas high school student building AI and Python projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2F5F8; --ink:#101C2E; --muted:#4A5A70; --line:#CBD5E1;
+  --accent:#0F7B6C; --card:#FFFFFF;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#0E1726;--ink:#E8EEF6;--muted:#9FB0C7;--line:#243349;--accent:#4FD1B8;--card:#152238;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.15rem;line-height:1.65}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.4rem}
+header.top{padding:1.2rem 0;border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.brand{font-family:var(--head);font-weight:700;color:var(--ink);text-decoration:none}
+nav a{font-family:var(--head);font-weight:500;margin-left:1.2rem;color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+.hero{padding:4.5rem 0 3.5rem}
+.hero h1{font-family:var(--head);font-weight:800;font-size:clamp(2.6rem,8vw,4.8rem);line-height:1.02;letter-spacing:-.03em;margin:0 0 1.2rem}
+.hero p{max-width:34em;font-size:1.3rem;color:var(--muted);margin:0 0 1.6rem}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{font-family:var(--head);font-weight:700;padding:.7rem 1.2rem;border-radius:6px;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn:hover{border-color:var(--accent)}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font-family:var(--head);font-weight:700;font-size:1.9rem;letter-spacing:-.02em;margin:0 0 1.4rem}
+h3{font-family:var(--head);font-weight:700;font-size:1.3rem;margin:0 0 .3rem}
+.project{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.4rem 1.5rem;margin-bottom:1.1rem}
+.project p{margin:.4rem 0 .8rem}
+.tags{font-family:var(--head);font-size:.9rem;color:var(--muted)}
+.role{display:grid;grid-template-columns:11rem 1fr;gap:.4rem 1.5rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.role:last-child{border-bottom:0}
+.role .what{font-family:var(--head);font-weight:700}
+.role p{margin:0}
+.certs{list-style:none;padding:0;margin:0;display:grid;gap:1rem}
+.certs li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1.3rem}
+.certs strong{font-family:var(--head)}
+.certs span{display:block;color:var(--muted)}
+footer{padding:2.5rem 0 3.5rem;border-top:1px solid var(--line);color:var(--muted)}
+@media (max-width:620px){
+  .role{grid-template-columns:1fr}
+  nav a{margin:0 1rem 0 0}
+  .hero{padding:3rem 0 2.5rem}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Jayan</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+
+    <div class="hero">
+      <h1>I build AI and Python projects that solve real problems.</h1>
+      <p>I’m a sophomore at Wylie High School in Texas, planning to study computer science. I like turning an annoying task into a tool that does it for me.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="https://github.com/YOUR-USERNAME">GitHub profile</a>
+      </div>
+    </div>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>AI Photo Culler</h3>
+        <p>A tool that uses the Gemini API to go through a large batch of photos and pick the best ones, so nobody has to sort thousands of shots by hand. I built it because I shoot photo and video myself.</p>
+        <div class="tags">Python · Gemini API</div>
+        <p><a href="https://github.com/YOUR-USERNAME/photo-culler">View the code on GitHub</a></p>
+      </article>
+
+      <article class="project">
+        <h3>USACO Bronze Preparation</h3>
+        <p>A structured, day-by-day plan for competitive programming practice, with solutions and notes on the problem-solving patterns I learned.</p>
+        <div class="tags">Python · Algorithms</div>
+        <p><a href="https://github.com/YOUR-USERNAME/usaco-solutions">View solutions on GitHub</a></p>
+      </article>
+
+      <article class="project">
+        <h3>Your next project</h3>
+        <p>Replace this card with your newest project: what it does, why you built it, and one thing you learned.</p>
+        <div class="tags">Add your tools here</div>
+        <p><a href="https://github.com/YOUR-USERNAME/REPO-NAME">View the code on GitHub</a></p>
+      </article>
+    </section>
+
+    <section id="leadership">
+      <h2>Leadership and activities</h2>
+
+      <div class="role">
+        <div class="what">President, Pathways</div>
+        <p>Student-led club at Wylie High School that connects students with working professionals so they can see real careers before college.</p>
+      </div>
+      <div class="role">
+        <div class="what">Officer, CS Club</div>
+        <p>Help plan meetings and activities for students interested in programming and computer science.</p>
+      </div>
+      <div class="role">
+        <div class="what">Camera and livestream</div>
+        <p>Every Saturday evening I run camera and livestream for a large temple congregation, which taught me how to stay calm and reliable during a live broadcast.</p>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul class="certs">
+        <li><strong>AI Fluency</strong><span>Anthropic</span></li>
+        <li><strong>CompTIA Tech+ (IT Fundamentals)</strong><span>CompTIA</span></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>The best way to reach me is email. You can also see all of my code on GitHub.</p>
+      <p><a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a><br>
+      <a href="https://github.com/YOUR-USERNAME">github.com/YOUR-USERNAME</a></p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Jayan. Built by hand with HTML and CSS.</div>
+</footer>
+
+</body>
+</html>
